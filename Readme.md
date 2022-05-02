@@ -3,6 +3,9 @@
 [-]: Type project >> React
 [-]: Language: markdown, javascript
 
+# Init React Project
+- npm create vite@latest storybook
+
 # Add Storybook:
 - npx sb init
 
