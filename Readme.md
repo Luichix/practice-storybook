@@ -1,7 +1,10 @@
 ## Componests Storybook
 
-[]: # Language: markdown
-[]: # Path: Storybook/index.js
+[-]: Type project >> React
+[-]: Language: markdown, javascript
 
-## Install Storybook
-## Git init
+# Add Storybook:
+- npx sb init
+
+# Git repository:
+- https://github.com/Luichix/storybook.git
