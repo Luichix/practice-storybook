@@ -19,7 +19,8 @@
     "@storybook/addon-links": "^6.4.22",
     "@storybook/react": "^6.4.22",
     "@storybook/testing-library": "^0.0.11",
-    "babel-loader": "^8.2.5"
-  },
-  "dependencies": {}
+    "babel-loader": "^8.2.5",
+    "eslint": "^8.14.0",
+    "eslint-plugin-react": "^7.29.4"
+  }
 }
