@@ -1,0 +1,15 @@
+.error {
+  color: red
+}
+
+.warn {
+  color: yellow
+}
+
+.success {
+  color: green;
+}
+
+.info {
+  color: blue
+}

@@ -9,7 +9,7 @@
 }
 .primary {
   color: white;
-  background-color: #26709e;
+  background-color: var(--color-primary);
 }
 .secondary {
   color: #333;
