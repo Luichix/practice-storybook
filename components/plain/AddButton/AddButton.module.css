@@ -1,0 +1,128 @@
+.add-button {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  padding: 10px 12px;
+  border: var(--border-width-thin) dashed;
+  background: var(--input-background);
+  cursor: pointer;
+  user-select: none;
+}
+
+.type-primary {
+  height: 48px;
+  border-color: var(--color-font-base);
+  border-radius: var(--button-border-radius-sm);
+}
+
+.type-secondary {
+  height: 40px;
+  border-color: var(--color-primary);
+  border-radius: var(--button-border-radius-md);
+}
+
+.is-editable {
+  padding: 0;
+  border: var(--border-width-thin) solid var(--color-primary);
+  background: var(--color-primary);
+  box-shadow: 0 0 0 1px var(--color-primary);
+  cursor: text;
+  transition: box-shadow 0.2s ease;
+}
+
+.is-editable.is-focused {
+  background: var(--input-background);
+  box-shadow: 0 0 0 1px var(--color-primary), 0 0 10px 0 var(--color-primary);
+}
+
+.is-editable.is-focused.is-invalid {
+  animation: shake 0.8s cubic-bezier(0.36, 0.07, 0.19, 0.97) both,
+    fadeOutInvalidBorderColor 2s ease-out forwards,
+    fadeOutInvalidBoxShadow 2s ease-out forwards;
+  backface-visibility: hidden;
+  perspective: 1000px;
+  transform: translate3d(0, 0, 0);
+}
+
+.is-editable input {
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+  padding: 0 12px;
+  border: var(--border-width-thin) solid transparent;
+  background: var(--color-transparent);
+  color: var(--color-font-inverted);
+  font-family: var(--font-family-sans);
+  font-size: var(--input-font-size);
+  font-weight: var(--font-weight-medium);
+  line-height: var(--line-height-none);
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.is-editable.is-focused input {
+  color: var(--color-font-base);
+}
+
+.is-editable input:focus {
+  outline: none;
+}
+
+.edit-container {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.edit-container :global(.help-text) {
+  width: 100%;
+  max-width: max-content;
+}
+
+@keyframes fadeOutInvalidBoxShadow {
+  0%,
+  50% {
+    box-shadow: 0 0 0 1px var(--color-rose-500),
+      0 0 10px 0 var(--color-rose-500);
+  }
+
+  100% {
+    box-shadow: 0 0 0 1px var(--color-primary), 0 0 10px 0 var(--color-primary);
+  }
+}
+
+@keyframes fadeOutInvalidBorderColor {
+  0%,
+  50% {
+    border-color: var(--color-rose-500);
+  }
+
+  100% {
+    border-color: var(--color-primary);
+  }
+}
+
+@keyframes shake {
+  10%,
+  90% {
+    transform: translate3d(-1px, 0, 0);
+  }
+
+  20%,
+  80% {
+    transform: translate3d(2px, 0, 0);
+  }
+
+  30%,
+  50%,
+  70% {
+    transform: translate3d(-4px, 0, 0);
+  }
+
+  40%,
+  60% {
+    transform: translate3d(4px, 0, 0);
+  }
+}
