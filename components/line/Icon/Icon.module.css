@@ -5,69 +5,69 @@
   user-select: none;
 }
 
-.size-sm {
+.sm {
   padding: 5px;
 }
 
-.size-md {
+.md {
   padding: 8px;
 }
 
-.size-lg {
+.lg {
   padding: 12px;
 }
 
-.size-xl {
+.xl {
   padding: 15px;
 }
 
-.color-base path,
-.color-base circle {
+.base path,
+.base circle {
   fill: var(--color-font-base);
 }
 
-.color-base line,
-.color-base rect {
+.base line,
+.base rect {
   stroke: var(--color-font-base);
 }
 
-.color-highlight path,
-.color-highlight circle {
+.highlight path,
+.highlight circle {
   fill: var(--color-font-highlight);
 }
 
-.color-highlight line,
-.color-highlight rect {
+.highlight line,
+.highlight rect {
   stroke: var(--color-font-highlight);
 }
 
-.color-muted path,
-.color-muted circle {
+.muted path,
+.muted circle {
   fill: var(--color-font-muted);
 }
 
-.color-muted line,
-.color-muted rect {
+.muted line,
+.muted rect {
   stroke: var(--color-font-muted);
 }
 
-.color-primary path,
-.color-primary circle {
+.primary path,
+.primary circle {
   fill: var(--color-primary);
 }
 
-.color-primary line,
-.color-primary rect {
+.primary line,
+.primary rect {
   stroke: var(--color-primary);
 }
 
-.color-inverted path,
-.color-inverted circle {
+.inverted path,
+.inverted circle {
   fill: var(--color-primary-inverted);
 }
 
-.color-inverted line,
-.color-inverted rect {
+.inverted line,
+.inverted rect {
   stroke: var(--color-primary-inverted);
 }
 
@@ -75,38 +75,38 @@
   fill: var(--color-base-transparent) !important;
 }
 
-.background-base {
+.basis {
   background: var(--color-gray-100);
   border-radius: var(--border-radius-full);
 }
 
-.background-transparent {
+.transparent {
   background: var(--color-base-transparent);
 }
 
-.background-highlight {
+.high {
   background: var(--color-primary-highlight);
   border-radius: var(--border-radius-full);
 }
 
-.background-muted {
+.soft {
   background: var(--color-primary-muted);
   border-radius: var(--border-radius-full);
 }
 
-.background-inverted {
+.invert {
   border: var(--picture-border);
   background: var(--color-font-inverted);
   border-radius: var(--border-radius-full);
   box-shadow: var(--box-shadow-sm);
 }
 
-.background-spotlight {
+.distinc {
   background: var(--color-yellow-100);
   border-radius: var(--border-radius-full);
   box-shadow: var(--box-shadow-sm);
 }
 
-.is-clickable {
+.isClickable {
   cursor: pointer;
 }

@@ -1,9 +1,9 @@
 const iconSize = {
-  xs: 14,
-  sm: 25,
-  md: 35,
-  lg: 50,
-  xl: 70,
+  xs: '14px',
+  sm: '25px',
+  md: '35px',
+  lg: '50px',
+  xl: '70px',
 }
 
 export const mapSize = (size) => iconSize[size]

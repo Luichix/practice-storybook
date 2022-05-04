@@ -1,23 +1,18 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import { mapSize } from './helpers'
-
+import classNames from 'classnames'
 import styles from './Icon.module.css'
 import { options, iconsMap } from './constants'
-import withStyles from '../../hocs/withStyles'
-
-const handleClick = ({ onClick }) => (event) => {
-  onClick(event)
-}
+import { mapSize } from './helpers'
 
 export const Icon = ({
   id,
-  className,
-  onClick,
   name,
-  size,
-  isClickable,
-  getStyles,
+  size= 'md',
+  color= 'base',
+  background= 'transparent',
+  isClickable= false,
+  handleClick,
 }) => {
   const icon = iconsMap[name]
   const mappedSize = mapSize(size)
@@ -25,11 +20,15 @@ export const Icon = ({
   return (
     <div
       id={id}
-      className={getStyles(className, 'icon', ['color', 'size', 'background'], {
-        'is-clickable': isClickable || !!onClick,
-      })}
+      className={classNames(
+        styles.icon,
+        styles[color],
+        styles[size],
+        styles[background], {
+          [styles.isClickable]: isClickable,
+        })}
       style={{ width: mappedSize, height: mappedSize }}
-      onClick={onClick && handleClick({ onClick })}
+      onClick={handleClick}
     >
       <svg
         viewBox={icon.viewBox}
@@ -45,22 +44,12 @@ export const Icon = ({
 
 Icon.propTypes = {
   name: PropTypes.oneOf(options.names).isRequired,
-  getStyles: PropTypes.func.isRequired,
-  onClick: PropTypes.func,
+  handleClick: PropTypes.func,
   size: PropTypes.oneOf(options.sizes),
   color: PropTypes.oneOf(options.colors),
   background: PropTypes.oneOf(options.backgrounds),
   id: PropTypes.string,
-  className: PropTypes.string,
   isClickable: PropTypes.bool,
 }
 
-Icon.defaultProps = {
-  size: 'md',
-  color: 'base',
-  background: 'transparent',
-  isClickable: false,
-  getStyles: () => {},
-}
-
-export default withStyles(styles)(Icon)
+export default Icon

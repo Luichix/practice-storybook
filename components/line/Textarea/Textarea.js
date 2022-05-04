@@ -1,28 +1,21 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-
+import classNames from 'classnames'
 import styles from './Textarea.module.css'
-import withStyles from '../../hocs/withStyles'
 
-const DEFAULT_TEXTAREA_ROWS = 5
-
-const handleChange = ({ onChange }) => () => {
-  onChange()
-}
 
 export const Textarea = ({
   children,
-  rows,
+  rows = 5,
   placeholder,
-  onChange,
-  getStyles,
+  handleChange,
 }) => {
   return (
     <textarea
-      className={getStyles('textarea')}
+      className={classNames(styles.textarea)}
       rows={rows}
       placeholder={placeholder}
-      onChange={handleChange({ onChange })}
+      onChange={handleChange}
     >
       {children}
     </textarea>
@@ -31,16 +24,9 @@ export const Textarea = ({
 
 Textarea.propTypes = {
   children: PropTypes.node,
-  getStyles: PropTypes.func.isRequired,
   onChange: PropTypes.func.isRequired,
   rows: PropTypes.number,
   placeholder: PropTypes.string,
 }
 
-Textarea.defaultProps = {
-  getStyles: () => {},
-  onChange: () => {},
-  rows: DEFAULT_TEXTAREA_ROWS,
-}
-
-export default withStyles(styles)(Textarea)
+export default Textarea

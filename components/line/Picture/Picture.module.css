@@ -7,10 +7,10 @@
   width: 100%;
 }
 
-.is-rounded img {
+.isRounded img {
   border-radius: var(--border-radius-full);
 }
 
-.with-border img {
+.withBorder img {
   border: var(--picture-border);
 }

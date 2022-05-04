@@ -9,10 +9,10 @@ export const Paragraph = ({
   color = 'base',
   size = 'md',
   weight = 'normal',
-  isStriked ='isStriked',
-  isInline = 'isInline',
-  isMonospace = 'isMonospace',
-  isCentered = 'isCentered',
+  isStriked =false,
+  isInline = false,
+  isMonospace = false,
+  isCentered = false,
 }) => {
   return (
     <p
@@ -21,10 +21,10 @@ export const Paragraph = ({
         styles[color],
         styles[size],
         styles[weight],
-        styles[isStriked],
-        styles[isInline],
-        styles[isMonospace],
-        styles[isCentered])}
+        { [styles.isStriked] : isStriked,
+          [styles.isInline] : isInline,
+          [styles.isMonospace] : isMonospace,
+          [styles.isCentered] : isCentered, })}
     >
       {children}
     </p>

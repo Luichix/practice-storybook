@@ -15,6 +15,14 @@ const choices = {
       hintOfRed: '#f9f9f9',
       romance: '#fcfdfd',
       mediumSpringGreen: '#00e5a8',
+      paoloVeroneseGreen: '#009877',
+      turquoise: '#30CFD4',
+      electricBlue: '#81EFFE',
+      white: '#ffffff',
+      spanishGray: '#9297A0',
+      feldspar: '#F7D4AD',
+      spanishViridian: '#007e5c',
+      whiteChocolate :'#f2e4d5'
     },
 
     base: {
@@ -315,7 +323,7 @@ const choices = {
   },
   fontFamily: {
     sans: ['Quicksand', 'Arial', 'sans-serif'],
-    mono: ["'Roboto Mono'", "'Courier New'", 'monospace'],
+    mono: ['Roboto Mono', 'Courier New', 'monospace'],
   },
   fontSize: {
     base: '14px',
@@ -391,25 +399,25 @@ const choices = {
 
 const decisions = {
   color: {
-    primary: choices.color.brand.mediumPurple,
-    primaryMuted: choices.color.brand.slateBlue,
-    primaryHighlight: choices.color.brand.blueMoon,
+    primary: choices.color.brand.paoloVeroneseGreen,
+    primaryMuted: choices.color.brand.turquoise,
+    primaryHighlight: choices.color.brand.electricBlue,
     primaryInverted: choices.color.brand.romance,
-    fontBase: choices.color.brand.eastBay,
-    fontMuted: choices.color.brand.regentGray,
+    fontBase: choices.color.brand.white,
+    fontMuted: choices.color.brand.spanishGray,
     fontHighlight: choices.color.brand.loblolly,
-    fontInverted: choices.color.base.white,
-    secondary: choices.color.brand.amaranth,
+    fontInverted: choices.color.base.spanishViridian,
+    secondary: choices.color.brand.spanishViridian,
     secondaryMuted: choices.color.brand.mandy,
     secondaryHighlight: choices.color.rose[200],
     secondaryInverted: choices.color.base.white,
-    tertiary: choices.color.brand.mediumSpringGreen,
-    tertiaryMuted: choices.color.emerald[400],
+    tertiary: choices.color.brand.feldspar,
+    tertiaryMuted: choices.color.whiteChocolate,
     tertiaryHighlight: choices.color.emerald[200],
     tertiaryInverted: choices.color.base.white,
   },
   backgroundColor: {
-    primary: choices.color.brand.whiteLilac,
+    primary: choices.color.brand.paoloVeroneseGreen,
     primaryHighlight: choices.color.brand.romance,
   },
   container: {

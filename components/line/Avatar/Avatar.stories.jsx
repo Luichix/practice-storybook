@@ -4,13 +4,13 @@ import {
   getTemplate,
   getListTemplate,
   getOptionsArgTypes,
-} from '../../helpers/storybook'
+} from '../../../helpers/storybook'
 
 const Template = getTemplate(Avatar, styles)
 const ListTemplate = getListTemplate(Avatar, styles)
 
 export default {
-  title: 'Atoms/Avatar',
+  title: 'Line/Avatar',
   component: Avatar,
   args: {
     src: 'https://picsum.photos/id/1027/200/200',

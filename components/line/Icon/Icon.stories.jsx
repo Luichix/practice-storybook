@@ -4,7 +4,7 @@ import {
   getTemplate,
   getListTemplate,
   getOptionsArgTypes,
-} from '../../helpers/storybook'
+} from '../../../helpers/storybook'
 
 const Template = getTemplate(Icon, styles)
 const ListTemplate = getListTemplate(Icon, styles)
@@ -21,7 +21,6 @@ export default {
     name: getOptionsArgTypes(options.names),
     background: getOptionsArgTypes(options.backgrounds),
   },
-  parameters: { __sb: { fd: 'row' } },
 }
 
 export const Default = Template.bind({})

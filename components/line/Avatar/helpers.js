@@ -1,7 +1,7 @@
 const avatarSize = {
-  sm: 22,
-  md: 44,
-  lg: 66,
+  sm: '22px',
+  md: '44px',
+  lg: '66px',
 }
 
 export const mapSize = (size) => avatarSize[size]

@@ -1,28 +1,32 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-
 import styles from './Card.module.css'
+import classNames from 'classnames'
 import { options } from './constants'
-import withStyles from '../../hocs/withStyles'
 
 export const handleClick = ({ onClick }) => (event) => {
   onClick(event)
 }
 
 export const Card = ({
-  getStyles,
-  onClick,
+  color,
+  size,
   isClickable,
   isDraggable,
+  handleClick,
   children,
 }) => {
   return (
     <div
-      onClick={onClick && handleClick({ onClick })}
-      className={getStyles('card', ['color', 'size'], {
-        'is-clickable': isClickable,
-        'is-draggable': isDraggable,
-      })}
+      onClick={handleClick}
+      className={classNames(
+        styles.card,
+        styles[color],
+        styles[size],
+        {
+          [styles.isClickable]: isClickable,
+          [styles.isDraggable]: isDraggable,
+        })}
     >
       {children}
     </div>
@@ -31,7 +35,6 @@ export const Card = ({
 
 Card.propTypes = {
   children: PropTypes.node.isRequired,
-  getStyles: PropTypes.func.isRequired,
   onClick: PropTypes.func,
   color: PropTypes.oneOf(options.colors),
   size: PropTypes.oneOf(options.sizes),
@@ -39,10 +42,4 @@ Card.propTypes = {
   isDraggable: PropTypes.bool,
 }
 
-Card.defaultProps = {
-  color: 'base',
-  size: 'sm',
-  getStyles: () => {},
-}
-
-export default withStyles(styles)(Card)
+export default Card

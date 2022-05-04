@@ -3,13 +3,13 @@ import {
   getTemplate,
   getListTemplate,
   getOptionsArgTypes,
-} from '../../helpers/storybook'
+} from '../../../helpers/storybook'
 
 const Template = getTemplate(Card, styles)
 const ListTemplate = getListTemplate(Card, styles)
 
 export default {
-  title: 'Atoms/Card',
+  title: 'Line/Card',
   component: Card,
   args: {
     children:

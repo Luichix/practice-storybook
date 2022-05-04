@@ -476,11 +476,12 @@ export const options = {
   names: Object.keys(iconsMap),
   colors: ['base', 'highlight', 'muted', 'primary', 'inverted'],
   backgrounds: [
+    'basis',
     'transparent',
-    'base',
-    'highlight',
-    'inverted',
-    'muted',
-    'spotlight',
+    'high',
+    'soft',
+    'invert',
+    'distinc',
   ],
 }
+

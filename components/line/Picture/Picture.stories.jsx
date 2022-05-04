@@ -1,11 +1,11 @@
 import { Picture, styles } from '.'
 
-import { getTemplate } from '../../helpers/storybook'
+import { getTemplate } from '../../../helpers/storybook'
 
 const Template = getTemplate(Picture, styles)
 
 export default {
-  title: 'Atoms/Picture',
+  title: 'Line/Picture',
   component: Picture,
   args: {
     src: 'https://picsum.photos/id/1033/400/400',

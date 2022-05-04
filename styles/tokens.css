@@ -11,6 +11,14 @@
   --color-brand-hint-of-red: #f9f9f9;
   --color-brand-romance: #fcfdfd;
   --color-brand-medium-spring-green: #00e5a8;
+  --color-brand-paolo-veronese-green: #009877;
+  --color-brand-turquoise: #30CFD4;
+  --color-brand-electric-blue: #81EFFE;
+  --color-brand-white: #ffffff;
+  --color-brand-spanish-gray: #9297A0;
+  --color-brand-feldspar: #F7D4AD;
+  --color-brand-spanish-viridian: #007e5c;
+  --color-brand-white-chocolate: #f2e4d5;
 
   --color-base-black: #000;
   --color-base-white: #fff;
@@ -265,7 +273,7 @@
   --spacing-lg: 40;
 
   --font-family-sans: Quicksand, Arial, sans-serif;
-  --font-family-mono: 'Roboto Mono', 'Courier New', monospace;
+  --font-family-mono: Roboto Mono, Courier New, monospace;
 
   --font-size-base: 14px;
   --font-size-xs: 1.2rem;
@@ -328,24 +336,24 @@
   --z-index-50: 50;
   --z-index-auto: auto;
 
-  --color-primary: #098060;
-  --color-primary-muted: #7559d1;
-  --color-primary-highlight: #eff1fd;
+  --color-primary: #009877;
+  --color-primary-muted: #30CFD4;
+  --color-primary-highlight: #81EFFE;
   --color-primary-inverted: #fcfdfd;
-  --color-font-base: #455970;
-  --color-font-muted: #7e858c;
+  --color-font-base: #ffffff;
+  --color-font-muted: #9297A0;
   --color-font-highlight: #b7b7b7;
-  --color-font-inverted: #fff;
-  --color-secondary: #eb2d52;
+  --color-font-inverted: undefined;
+  --color-secondary: #007e5c;
   --color-secondary-muted: #eb4e58;
   --color-secondary-highlight: #fecdd3;
   --color-secondary-inverted: #fff;
-  --color-tertiary: #00e5a8;
-  --color-tertiary-muted: #34d399;
+  --color-tertiary: #F7D4AD;
+  --color-tertiary-muted: undefined;
   --color-tertiary-highlight: #a7f3d0;
   --color-tertiary-inverted: #fff;
 
-  --background-color-primary: #e8e8e8;
+  --background-color-primary: #009877;
   --background-color-primary-highlight: #fcfdfd;
 
   --container-max-width: 800px;

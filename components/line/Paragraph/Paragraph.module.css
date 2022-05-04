@@ -11,7 +11,7 @@
 }
 
 .base {
-  color: var(--color-font-base);
+  color: var(--color-primary);
 }
 
 .inverted {
