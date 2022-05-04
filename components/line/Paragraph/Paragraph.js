@@ -9,10 +9,10 @@ export const Paragraph = ({
   color = 'base',
   size = 'md',
   weight = 'normal',
-  isStriked,
-  isInline,
-  isMonospace,
-  isCentered,
+  isStriked ='isStriked',
+  isInline = 'isInline',
+  isMonospace = 'isMonospace',
+  isCentered = 'isCentered',
 }) => {
   return (
     <p
@@ -36,7 +36,6 @@ Paragraph.propTypes = {
   color: PropTypes.oneOf(options.colors),
   size: PropTypes.oneOf(options.sizes),
   weight: PropTypes.oneOf(options.weights),
-  className: PropTypes.string,
   isStriked: PropTypes.bool,
   isInline: PropTypes.bool,
   isCentered: PropTypes.bool,

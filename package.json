@@ -30,6 +30,7 @@
     "babel-loader": "^8.2.5",
     "eslint": "^8.14.0",
     "eslint-plugin-react": "^7.29.4",
+    "jest": "^28.0.3",
     "prop-types": "^15.8.1",
     "vite": "^2.9.5"
   }

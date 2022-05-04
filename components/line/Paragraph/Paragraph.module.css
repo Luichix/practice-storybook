@@ -1,5 +1,13 @@
 .paragraph {
   width: 100%;
+  display: flex;
+  flex-direction: 'column';
+  max-height: auto;
+  justify-content: 'flex-start';
+  align-content: 'flex-start';
+  flex-wrap: 'wrap',;
+  height: '100%';
+  gap: '10px 30px';
 }
 
 .base {
