@@ -1,11 +1,10 @@
 import { Textarea, styles } from '.'
-
-import { getTemplate } from '../../helpers/storybook'
+import { getTemplate } from '../../../helpers/storybook'
 
 const Template = getTemplate(Textarea, styles)
 
 export default {
-  title: 'Atoms/Textarea',
+  title: 'Lines/Textarea',
   component: Textarea,
   args: {
     placeholder:

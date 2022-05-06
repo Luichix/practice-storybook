@@ -3,7 +3,6 @@ import PropTypes from 'prop-types'
 import classNames from 'classnames'
 import styles from './Textarea.module.css'
 
-
 export const Textarea = ({
   children,
   rows = 5,

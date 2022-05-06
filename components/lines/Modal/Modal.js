@@ -1,16 +1,13 @@
 import React, { useState } from 'react'
 import PropTypes from 'prop-types'
-
 import styles from './Modal.module.css'
+import classNames from 'classnames'
 import { options } from './constants'
-import withStyles from '../../hocs/withStyles'
 import Icon from '../Icon'
-import Container from '../../layout/Container'
-import isEmpty from '../../utils/isEmpty'
+import isEmpty from '../../../utils/isEmpty'
+import useMedia from '../../../hook/useMedia'
+import Container from '../../cubes/Container'
 
-import useMedia from '../../hook/useMedia'
-
-// Sync with ./Modal.module.css#L13-L17
 const FADE_OUT_ANIMATION_TIME = 400
 
 const createHandlerClick = () => (event) => {
@@ -30,8 +27,7 @@ export const Modal = ({
   onClose,
   secondaryAction,
   children,
-  getStyles,
-  type,
+  type = 'primary',
   isPlayground,
 }) => {
   const isDesktop = useMedia(['(min-width: 992px)'], [true])
@@ -41,17 +37,17 @@ export const Modal = ({
 
   return (
     <div
-      className={getStyles('backdrop', {
-        'is-playground': isPlayground,
-        'on-fade-out': onFadeOut,
+      className={classNames(styles.backdrop, {
+        [styles[isPlayground]]: isPlayground,
+        [styles[onFadeOut]]: onFadeOut,
       })}
       onClick={handleClose}
     >
       <div
-        className={getStyles('modal', ['type'])}
+        className={classNames(styles.modal, [styles[type]])}
         onClick={createHandlerClick()}
       >
-        <div className={getStyles('heading')}>
+        <div className={styles.header}>
           {!!onClose && (
             <Icon
               color={isDesktop && type === 'secondary' ? 'primary' : 'inverted'}
@@ -80,7 +76,6 @@ export const Modal = ({
 
 Modal.propTypes = {
   children: PropTypes.node.isRequired,
-  getStyles: PropTypes.func.isRequired,
   onClose: PropTypes.func,
   secondaryAction: PropTypes.shape({
     icon: PropTypes.string,
@@ -90,9 +85,4 @@ Modal.propTypes = {
   isPlayground: PropTypes.bool,
 }
 
-Modal.defaultProps = {
-  getStyles: () => {},
-  type: 'primary',
-}
-
-export default withStyles(styles)(Modal)
+export default Modal
