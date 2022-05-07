@@ -1,16 +1,16 @@
-import { Heading, styles, options } from '.'
+import { Header, styles, options } from '.'
 import {
   getTemplate,
   getListTemplate,
   getOptionsArgTypes,
-} from '../../helpers/storybook'
+} from '../../../helpers/storybook'
 
-const Template = getTemplate(Heading, styles)
-const ListTemplate = getListTemplate(Heading, styles)
+const Template = getTemplate(Header, styles)
+const ListTemplate = getListTemplate(Header, styles)
 
 export default {
-  title: 'Atoms/Heading',
-  component: Heading,
+  title: 'Lines/Header',
+  component: Header,
   args: {
     children: 'Consent doubt Tuckborough challenge destroying.',
   },

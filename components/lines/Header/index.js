@@ -1,5 +1,5 @@
-export { default, Heading } from './Heading'
+export { default, Header } from './Header'
 export { options } from './constants'
-export { default as styles } from './Heading.module.css'
+export { default as styles } from './Header.module.css'
 
 // REVIEW component heading

@@ -40,6 +40,11 @@
   font-size: var(--font-size-xl);
 }
 
+.xxl {
+  font-size: var(--font-size-2xl);
+}
+
+
 .normal {
   font-weight: var(--font-weight-normal);
 }

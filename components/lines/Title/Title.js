@@ -1,6 +1,6 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import styles from './Header.module.css'
+import styles from './Title.module.css'
 import { options } from './constants'
 import classNames from 'classnames'
 
