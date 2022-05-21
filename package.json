@@ -4,12 +4,10 @@
   "description": "components",
   "version": "0.0.0",
   "scripts": {
-    "dev": "vite",
-    "build": "vite build",
-    "preview": "vite preview",
     "storybook": "start-storybook -p 6006",
     "build-storybook": "build-storybook",
-    "build-tokens": "node ./scripts/buildTokens"
+    "build-tokens": "node ./src/scripts/buildTokens",
+    "build-styles": "node ./src/scripts/buildStyles"
   },
   "dependencies": {
     "classnames": "^2.3.1",
