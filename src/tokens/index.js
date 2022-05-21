@@ -417,6 +417,10 @@ const decisions = {
     tertiaryMuted: choices.color.brand.whiteChocolate,
     tertiaryHighlight: choices.color.brand.esmerald,
     tertiaryInverted: choices.color.base.white,
+    success: '#268f47',
+    error: '#eb4e58',
+    warning: '#f7d4ad',
+    info: '#255780',
   },
   backgroundColor: {
     primary: choices.color.brand.paoloVeroneseGreen,

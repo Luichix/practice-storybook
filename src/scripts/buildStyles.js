@@ -1,6 +1,6 @@
-const toCapitalize = require('./__test__/utils/toCapitalize')
-const toPascalCase = require('./__test__/utils/toPascalCase')
-const { choices, decisions } = require('./__test__/tokens')
+const toCapitalize = require('../utils/toCapitalize')
+const toPascalCase = require('../utils/toPascalCase')
+const { choices, decisions } = require('../tokens')
 const fs = require('fs')
 
 const cleanLines = (string = '') => string.trim().replace(/^\n\n/gm, '\n')
@@ -43,7 +43,7 @@ function buildStyles() {
     customProperties
   )}\n}\nexport default tokens`
 
-  fs.writeFile('./tokens.js', data, 'utf8', (error) => {
+  fs.writeFile('./src/styles/tokens.js', data, 'utf8', (error) => {
     if (error) throw error
     console.log('🎨 Custom properties created!')
   })
