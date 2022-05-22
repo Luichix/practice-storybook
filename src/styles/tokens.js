@@ -21,6 +21,7 @@ const tokens = {
   colorBrandSpanishViridian: '#007e5c',
   colorBrandWhiteChocolate: '#f2e4d5',
   colorBrandRose: '#fecdd3',
+  colorBrandEmperor: '#545454',
 
   colorBaseBlack: '#000',
   colorBaseWhite: '#fff',
@@ -346,7 +347,7 @@ const tokens = {
   colorPrimaryMuted: '#30CFD4',
   colorPrimaryHighlight: '#81EFFE',
   colorPrimaryInverted: '#fcfdfd',
-  colorFontBase: '#ffffff',
+  colorFontBase: '#545454',
   colorFontMuted: '#9297A0',
   colorFontHighlight: '#b7b7b7',
   colorFontInverted: '#007e5c',

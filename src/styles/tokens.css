@@ -21,6 +21,7 @@
   --color-brand-spanish-viridian: #007e5c;
   --color-brand-white-chocolate: #f2e4d5;
   --color-brand-rose: #fecdd3;
+  --color-brand-emperor: #545454;
 
   --color-base-black: #000;
   --color-base-white: #fff;
@@ -342,7 +343,7 @@
   --color-primary-muted: #30CFD4;
   --color-primary-highlight: #81EFFE;
   --color-primary-inverted: #fcfdfd;
-  --color-font-base: #ffffff;
+  --color-font-base: #545454;
   --color-font-muted: #9297A0;
   --color-font-highlight: #b7b7b7;
   --color-font-inverted: #007e5c;

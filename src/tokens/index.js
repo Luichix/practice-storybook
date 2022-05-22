@@ -25,6 +25,7 @@ const choices = {
       spanishViridian: '#007e5c',
       whiteChocolate: '#f2e4d5',
       rose: '#fecdd3',
+      emperor: '#545454',
     },
 
     base: {
@@ -405,7 +406,7 @@ const decisions = {
     primaryMuted: choices.color.brand.turquoise,
     primaryHighlight: choices.color.brand.electricBlue,
     primaryInverted: choices.color.brand.romance,
-    fontBase: choices.color.brand.white,
+    fontBase: choices.color.brand.emperor,
     fontMuted: choices.color.brand.spanishGray,
     fontHighlight: choices.color.brand.loblolly,
     fontInverted: choices.color.brand.spanishViridian,
