@@ -329,7 +329,7 @@ const choices = {
     mono: ['Roboto Mono', 'Courier New', 'monospace'],
   },
   fontSize: {
-    base: '14px',
+    base: '16px',
     xs: '1.2rem',
     sm: '1.4rem',
     md: '1.6rem',
@@ -441,7 +441,7 @@ const decisions = {
   input: {
     height: '38px',
     maxWidth: '400px',
-    background: choices.color.base.white,
+    background: '#f3f3f5',
     borderRadius: choices.borderRadius.lg,
     fontSize: choices.fontSize.sm,
   },
